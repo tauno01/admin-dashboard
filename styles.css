@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .griddy-container {
@@ -31,11 +31,45 @@
     flex-direction: column;
     justify-content: flex-start;
     gap: 10vh;
+    background-color: rgb(61, 114, 228);
+    height: 100%;
 }
 
 .image-logo {
-    margin-top: 10px;
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    margin: 10px 15px 0 15px;
+}
+
+.image-logo > p {
+    color: white;
+    font-size: 36px;
+}
+
+.grid-1-griddy,
+.grid-1-griddy2 {
+    display: grid;
+    grid-template-columns: 20% 50% 30%;
+    row-gap: 30px;
+    margin-left: 20px;
+}
+
+.grid-1-griddy > div,
+.grid-1-griddy2 > div {
+    font-size: 24px;
+    color: white;
+    margin-right: 5px;
+}
+
+.grid-1-griddy > i,
+.grid-1-griddy2 > i {
+    align-self: center;
+}
+
+.fas {
+    color: white;
 }
 
 /* HEADER */
